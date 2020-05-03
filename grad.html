@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>
+            Graduation
+                    </title>
+      
+    </head>
+
+    <body style="background-color: lightsteelblue;">
+       
+       
+        
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge">
+      JN
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-jumbo w3-center">What will you receive? </h1>
+      <hr class="w3-border-grey" style="margin:auto;width:20%">
+        
+      
+      <p class="w3-xlarge w3-center"> What's up? Aren't you curious if you're receiving anything? Enter your name and find out. <br> <br>
+      </p> 
+      
+    </div>
+
+
+</div>
+  
+<center>
+
+    <label for="fname">First name: <br> <br> </label> 
+        <input type="text" id="fname" name="fname"> <br> <br> 
+    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <style>
+        body,h1 {font-family: "Raleway", sans-serif}
+        body, html {height: 100%}
+        .bgimg {
+          background-image: url('/w3images/forestbridge.jpg');
+          min-height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+        
+
+        </style>
+      
+        
+       
+         
+        </div>
+
+        <button onclick="Whatdoiget(document.getElementById('fname').value)"> What do I get?</button> <br> <br>
+      
+
+        <div id="gift"></div>
+
+    </center>   
+
+        <script> 
+            function Whatdoiget(name) {
+                
+                var documentText = document.getElementById("gift");
+                
+                var gift;
+                if (name == "radhika" || name == "radhu" || name == "Radhika" || name == "Radhu") {
+                    gift = "An iPhone"; 
+        
+                }else if (name == "divy" || name == "divyansh" || name == "Divy" || name == "Divyansh") {
+                    gift = "nun bruv";
+                
+                }else if (name == "muku"|| name == "Muku" || name == "Mukita" || name == "mukita"){ 
+                    gift = "go clean the toilets";
+                
+                }else if (name == "namu" || name == "Namu" || name == "Namita" || name == "namita") {
+                    gift = "bye felicia";
+               
+                } else if (name == "panna" || name == "Panna" || name == "Prerana" || name == "prerana") {
+                    gift = "go do your work bruh"
+                } else if (name == "Samin" || name == "samin" || name == "sam" || name == "Sam") {
+                    gift = "freshly rolled blunt"
+                } else if (name == "Jimmy" || name == "jimmy" || name == "Tianyi") {
+                    gift = "a weird roommate at Western"
+                } else {
+                    gift = "Nun bruv"
+                } 
+
+    
+                
+
+                documentText.innerHTML = gift;
+            
+            }
+       
+
+
+        </script>
+
+
+
+
+    <br> <br> <br><br><br>
+
+    </body>
+
+</html>
+        
